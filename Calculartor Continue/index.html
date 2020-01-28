@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="style.css">
+		<script src="main.js"></script>
+		<title>Calculator</title>
+	</head>
+	<body>
+		<main class="grid-container">
+			<div class="displayText">
+				<p id="disText" class="displayText">Enter your numbers</p>
+			</div>
+
+			<button onclick="Clear()" id="clear" class="actionButton">C</button>
+			<button onclick="MakeParantes()" id="parantes" class="actionButton">( )</button>
+			<button onclick="RemoveChar()" id="removeNumb" class="actionButton">←</button>
+			<button onclick="Sum()" id="sum" class="actionButton">=</button>
+
+			<button onclick="NumberPressed(1)" id="numb1" class="numbButton">1</button>
+			<button onclick="NumberPressed(2)" id="numb2" class="numbButton">2</button>
+			<button onclick="NumberPressed(3)" id="numb3" class="numbButton">3</button>
+			<button onclick="NumberPressed(4)" id="numb4" class="numbButton">4</button>
+			<button onclick="NumberPressed(5)" id="numb5" class="numbButton">5</button>
+			<button onclick="NumberPressed(6)" id="numb6" class="numbButton">6</button>
+			<button onclick="NumberPressed(7)" id="numb7" class="numbButton">7</button>
+			<button onclick="NumberPressed(8)" id="numb8" class="numbButton">8</button>
+			<button onclick="NumberPressed(9)" id="numb9" class="numbButton">9</button>
+			<button onclick="NumberPressed(0)" id="numb0" class="numbButton">0</button>
+
+			<button onclick="AddOperation('+')" id="plus" class="actionButton">+</button>
+			<button onclick="AddOperation('-')" id="minus" class="actionButton">-</button>
+			<button onclick="AddOperation('*')" id="multi" class="actionButton">*</button>
+			<button onclick="AddOperation('/')" id="divi" class="actionButton">/</button>
+			<button onclick="PlusMinus()" id="plusMinus" class="actionButton">+/-</button>
+			<button onclick="AddComma()" id="comma" class="actionButton">,</button>
+		</main>
+	</body>
+</html>

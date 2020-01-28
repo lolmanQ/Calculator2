@@ -1,0 +1,80 @@
+.grid-container{
+	display: grid;
+}
+
+main.grid-container{
+	grid-template-areas: 
+	'dF dF dF dF'
+	'clear parantes removeNumb sum'
+	'nr1 nr2 nr3 plus'
+	'nr4 nr5 nr6 minus'
+	'nr7 nr8 nr9 multi'
+	'plusMinus nr0 comma divi';
+
+	width: 400px;
+	height: 600px;
+
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+#clear{grid-area: clear;}
+#parantes{grid-area: parantes;}
+#removeNumb{grid-area: removeNumb;}
+#sum{grid-area: sum;}
+#numb1{grid-area: nr1;}
+#numb2{grid-area: nr2;}
+#numb3{grid-area: nr3;}
+#numb4{grid-area: nr4;}
+#numb5{grid-area: nr5;}
+#numb6{grid-area: nr6;}
+#numb7{grid-area: nr7;}
+#numb8{grid-area: nr8;}
+#numb9{grid-area: nr9;}
+#numb0{grid-area: nr0;}
+div.displayText{grid-area: dF;}
+#plus{grid-area:plus;}
+#minus{grid-area:minus;}
+#multi{grid-area:multi;}
+#divi{grid-area:divi;}
+#plusMinus{grid-area:plusMinus;}
+#comma{grid-area:comma;}
+
+button{
+	border-width: 1px;
+	border-color: rgba(20, 20, 153, 0.274);
+	background-color: rgba(0, 0, 0, 0.007);
+}
+
+button:active{
+	background-color: rgba(0, 0, 0, 0.037);
+}
+
+main>button.numbButton{
+	width: auto;
+	height: auto;
+	font-size: 1.4em;
+}
+
+button.actionButton{
+	width:  auto;
+	height: auto;
+	font-size: 1.4em;
+}
+
+p.displayText{
+	text-align: right;
+	margin: 0;
+	padding: 0.4rem;
+}
+
+main{
+	background: linear-gradient(90deg, rgb(0, 195, 255), rgb(0, 241, 101));
+	border: 4px solid rgb(51, 51, 51);
+	
+}
+
+body{
+	background: repeating-linear-gradient(90deg, rgb(119, 119, 119), rgb(61, 61, 61));	
+}
